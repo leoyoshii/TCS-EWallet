@@ -6,6 +6,9 @@ build/
 
 .env
 ormconfig.json
+yarn.lock
 
 tmp/*
 !tmp/.gitkeep
+
+
