@@ -32,6 +32,6 @@ app.get('/', function (req, res) {
   res.send('Use o Insomnia para requisições');
 });
 
-app.listen(process.env.APP_PORT, () => {
+app.listen(process.env.APP_PORT || 3333, () => {
   console.log(`💰 Server is running in Port: ${process.env.APP_PORT}`);
 });
