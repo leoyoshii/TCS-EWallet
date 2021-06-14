@@ -28,10 +28,6 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
     .json({ status: 'error', massage: err.message, code: 500 });
 });
 
-app.get('/', function (req, res) {
-  res.send('Use o Insomnia para requisições');
-});
-
-app.listen(process.env.APP_PORT || 3333, () => {
+app.listen(process.env.APP_PORT, () => {
   console.log(`💰 Server is running in Port: ${process.env.APP_PORT}`);
 });
